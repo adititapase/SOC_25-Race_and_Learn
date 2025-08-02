@@ -1,6 +1,6 @@
 # RL: Race and Learn 
 
-This README file contains a consolidated summary of everything I have learned and improved upon over the 4 weeks of the SOC 25 project Race and Learn. The repository includes the submissions for coding assignments from week 1 and week 2.
+This README file contains a consolidated summary of everything I have learned and improved upon over the 8 weeks of the SOC 25 project Race and Learn. The repository includes the submissions for coding assignments from week 1, 2, 5 and the final week.
 
 ---
 
@@ -127,12 +127,107 @@ This README file contains a consolidated summary of everything I have learned an
   - Compared Q-learning, Deep Q-learning, and Deep Q-Networks.
   - Identified key differences in their scalability, performance, and applicability.
 
+
+
+## Week 5: DQN Implementation and Evaluation in Snake
+
+### Topics Covered
+
+**Deep Q-Network (DQN):**
+- Implemented a custom Deep Q-Network agent from scratch using PyTorch for the Snake game environment.
+- Covered the full reinforcement learning pipeline:
+  - Replay Buffer for Experience Replay
+  - Target Networks to stabilize Q-value updates
+  - Epsilon-Greedy Strategy for exploration-exploitation tradeoff
+  - Q-value bootstrapping and loss function computation
+
+**Environment Interaction:**
+- Encoded game states into vector representations suitable for neural networks.
+- Managed frame skipping and action intervals to balance learning and game realism.
+
+**Evaluation Techniques:**
+- Tracked average score per episode and rolling mean.
+- Compared trained agent vs random agent performance.
+
+### Week 5: Assignment
+
+Implemented and trained a Deep Q-Network agent to learn and play the Snake game environment effectively. Key features:
+- Neural network with 3 fully connected layers trained to approximate Q(s, a).
+- Successfully learned food-seeking and basic survival strategies.
+- Performance improved consistently with increasing episodes, achieving stable convergence after training.
+
+This week helped me solidify concepts of function approximation, stability techniques in RL, and hands-on implementation of Deep Q-learning for discrete action spaces.
+
 ---
 
-## Overall Progress Reflection
+## Week 6: Policy Gradient Methods – PPO and OpenAI Gym Environments
 
-- Strengthened core Python and OOP foundations through real projects.
-- Created a fully playable Snake game using Python and the PyGame library.
-- Built and trained CNN models from scratch using PyTorch.
-- Developed a structured understanding of reinforcement learning, from MDPs to DQNs.
+### Topics Covered
+
+**Proximal Policy Optimization (PPO):**
+- Studied the limitations of value-based methods and motivation behind policy-gradient methods.
+- Understood how PPO optimizes a clipped surrogate objective to ensure stable policy updates.
+- Learned advantages of Actor-Critic methods and how PPO strikes a balance between exploration and exploitation.
+
+**OpenAI Gym Integration:**
+- Explored Gym’s interface for observation space, action space, and episode management.
+
+**Stable-Baselines3 Library:**
+- Leveraged the SB3 library for easy and efficient PPO implementation.
+- Learned how to set hyperparameters like learning rate, gamma, GAE lambda, and number of epochs.
+
+### Week 6: Assignment
+
+- Trained a PPO agent on CartPole-v1 and visualized performance using episode rewards.
+- Modified observation space handling and logging for better interpretability.
+- Compared PPO’s performance with DQN on small discrete environments.
+
+This week expanded my understanding beyond value-based RL into continuous action domains and modern stable RL algorithms. It also familiarized me with reproducible benchmarking using standard libraries.
+
+---
+
+## Week 7 & 8: Final Project – PPO Agent for CarRacing-v3
+
+### Topics Covered
+
+**Advanced RL in Continuous Environments:**
+- Tackled the challenge of solving a high-dimensional continuous control task: *CarRacing-v3*.
+- Adapted PPO for image-based observations and continuous action outputs.
+- Used frame-stacking and grayscale preprocessing to simplify input space and capture motion.
+
+**Model Training & Evaluation:**
+- Trained PPO agent using SB3 with custom wrappers for observation and reward shaping.
+- Tracked performance over thousands of timesteps.
+- Recorded and saved gameplay using Gym’s `RecordVideo` and evaluated agent behavior qualitatively.
+
+**Challenges Solved:**
+- Addressed video recording issues by switching to compatible rendering modes.
+- Fixed observation shape mismatches and managed frame-skipping behavior for smoother input dynamics.
+
+### Week 7 & 8: Final Submission
+
+- Final submission includes:
+  - PPO agent code for training and testing on CarRacing-v3
+  - Preprocessing wrappers and environment setup
+  - Trained model checkpoint and performance plots
+  - Demo video showcasing agent performance
+- The PPO agent learned lane-keeping behavior and some corner navigation despite the environment’s high complexity.
+
+These final weeks gave me in-depth practical experience in:
+- Policy gradient algorithms for continuous domains
+- Visual learning in high-dimensional input spaces
+- Engineering an end-to-end RL solution from training to deployment
+
+---
+
+## Summary
+
+From building a Snake game to solving *CarRacing-v3* using PPO, this project has taken me through the complete stack of reinforcement learning—from foundational tabular methods to advanced actor-critic algorithms. The project enhanced my:
+- Understanding of game environments and agent interaction
+- Proficiency in PyTorch and Stable-Baselines3 for RL
+- Ability to debug, train, and evaluate complex models
+- Experience working on high-dimensional and continuous state-action problems
+
+This repository stands as a comprehensive log of my progression and expertise gained in Reinforcement Learning during the SOC project.
+
 
