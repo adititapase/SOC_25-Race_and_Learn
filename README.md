@@ -81,7 +81,7 @@ This README file contains a consolidated summary of everything I have learned an
 
 > This assignment gave me practical experience with CNN design and training workflows, along with the ability to interpret results through evaluation metrics and visualization.
 
-...
+---
 
 ## Week 3: Introduction to Reinforcement Learning (RL)
 
@@ -127,7 +127,7 @@ This README file contains a consolidated summary of everything I have learned an
   - Compared Q-learning, Deep Q-learning, and Deep Q-Networks.
   - Identified key differences in their scalability, performance, and applicability.
 
-
+---
 
 ## Week 5: DQN Implementation and Evaluation in Snake
 
