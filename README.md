@@ -176,14 +176,6 @@ This week helped me solidify concepts of function approximation, stability techn
 - Leveraged the SB3 library for easy and efficient PPO implementation.
 - Learned how to set hyperparameters like learning rate, gamma, GAE lambda, and number of epochs.
 
-### Week 6: Assignment
-
-- Trained a PPO agent on CartPole-v1 and visualized performance using episode rewards.
-- Modified observation space handling and logging for better interpretability.
-- Compared PPO’s performance with DQN on small discrete environments.
-
-This week expanded my understanding beyond value-based RL into continuous action domains and modern stable RL algorithms. It also familiarized me with reproducible benchmarking using standard libraries.
-
 ---
 
 ## Week 7 & 8: Final Project – PPO Agent for CarRacing-v3
